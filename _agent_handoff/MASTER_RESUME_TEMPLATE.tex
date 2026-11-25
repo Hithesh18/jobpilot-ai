@@ -1,0 +1,100 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[left=0.46in, right=0.46in, top=0.33in, bottom=0.33in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\urlstyle{same}
+
+% Section formatting matching clean single-column ATS layout
+\titleformat{\section}{\large\mdseries}{}{0em}{}[\vspace{-2pt}\titlerule]
+\titlespacing*{\section}{0pt}{5.5pt}{2.5pt}
+
+% Crisp, readable bullet spacing
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+% ==================== HEADER ====================
+\begin{center}
+    {\LARGE Alex Morgan}\\[3pt]
+    Berlin, Germany \textbar{} \href{mailto:alex.morgan.dev@example.com}{alex.morgan.dev@example.com} \textbar{} +49 170 0000000\\
+    \href{https://linkedin.com/in/alex-morgan-example}{linkedin.com/in/alex-morgan-example} \textbar{} \href{https://github.com/alex-morgan-example}{github.com/alex-morgan-example} \textbar{} \href{https://alex-morgan-dev.example.com}{alex-morgan-dev.example.com}
+\end{center}
+
+\vspace{-6pt}
+
+% ==================== SUMMARY (ALWAYS 4-5 FULL LINES, STARTING WITH EXACT JD TITLE & JD'S PRIMARY STACK) ====================
+\section*{Summary}
+Full Stack Engineer with 4+ years of experience delivering production web applications, REST APIs, and microservices end to end in TypeScript, React, Next.js, Vue.js 3, Node.js, and NestJS. Currently builds metering, subscription billing, and multi-tenant security features for a cloud SaaS platform, owning delivery from product discovery and API design to production release. Experienced with event-driven systems, asynchronous queues (BullMQ, Redis), Docker, and Kubernetes; builds RAG applications and uses Claude Code and AI coding agents daily.
+
+% ==================== SKILLS (ALWAYS THESE 7 CLEAN CATEGORIES — NEVER PUT EDUCATION HERE) ====================
+\section*{Skills}
+\textbf{Languages:} TypeScript, JavaScript, SQL, Python\\
+\textbf{Web and Frameworks:} React, Next.js, Vue.js 3, Node.js, NestJS, Express.js, Tailwind CSS, Vite, Pinia, REST APIs\\
+\textbf{Data and Messaging:} PostgreSQL, MySQL, MSSQL, MongoDB, Redis, BullMQ, Redis Streams, GCP Pub/Sub\\
+\textbf{Cloud and DevOps:} Docker, Kubernetes, Helm, GitHub Actions, GitLab CI, CI/CD, Git, GCP, Linux\\
+\textbf{AI Engineering:} Claude Code, AI coding agents, RAG, LangChain, LlamaIndex, LangGraph, MCP, Ollama\\
+\textbf{Testing and Tools:} Playwright, Vitest, Jest, React Testing Library, Supertest, Postman, Jira\\
+\textbf{Spoken:} English (fluent), German (A2, actively improving)
+
+% ==================== EDUCATION ====================
+\section*{Education}
+\textbf{Technical University of Berlin} \hfill October 2024 -- November 2026\\
+Master of Science in Computer Science\\
+Relevant Coursework: Distributed Systems, Cloud Computing, Data Engineering, Machine Learning, Applied AI\\[2pt]
+\textbf{University of Waterloo} \hfill September 2018 -- April 2022\\
+Bachelor of Computer Science
+
+% ==================== WORK EXPERIENCE (KEEP FULL, CONCRETE MULTI-LINE BULLETS TO FILL PAGE CLEANLY!) ====================
+\section*{Work Experience}
+
+\textbf{Northstar Cloud GmbH, Berlin} \hfill September 2025 -- Present\\
+\textbf{Full Stack Developer (Working Student)} -- \textit{Multi-tenant Cloud SaaS}
+\begin{itemize}
+    \item Build and release SaaS features end to end with TypeScript, Node.js, Express.js, Vue.js 3, PostgreSQL, and MongoDB.
+    \item Cut a workspace usage-analytics REST API from $\sim$24\,s to $\sim$3.8\,s by caching closed months in Redis, querying only active windows, and merging reads into one indexed MongoDB aggregation.
+    \item Eliminated duplicate credit deductions across Kubernetes replicas with an atomic MongoDB compare-and-set backed by parallel race tests.
+    \item Closed a tenant-isolation gap in subscription APIs by enforcing strict JWT/OAuth 2.0 and RBAC checks, backed by regression tests.
+    \item Designed an event-driven metering worker (GCP Pub/Sub, MongoDB, Redis Streams consumer groups) with ack-after-persist, retries, and audit logging, deployed via Docker, Helm, and CI/CD.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{PulseEvent Technologies, Berlin} \hfill October 2024 -- August 2025\\
+\textbf{Full Stack Developer (Working Student)} -- \textit{Live Event Ticketing Platform}
+\begin{itemize}
+    \item Built event-registration and ticketing features end to end with React, TypeScript, NestJS REST APIs, BullMQ background jobs, and MongoDB data models.
+    \item Containerised services with Docker and covered critical workflows with Playwright, Jest, and React Testing Library to cut release regressions.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{CoreTel Systems, Toronto} \hfill May 2022 -- August 2024\\
+\textbf{Software Developer} -- \textit{Enterprise Billing Portal}
+\begin{itemize}
+    \item Developed customer-facing enterprise billing and reporting interfaces using React, Angular, JavaScript, and SQL.
+    \item Owned the Account Reconciliation module end to end and built reusable React and backend components that improved response times.
+\end{itemize}
+
+% ==================== MASTER'S THESIS ====================
+\section*{Master's Thesis}
+\textit{``Collaborative Browser-Based 3D Urban Scene Inspection Across Synchronized Web Clients''}: an interactive 3D scene viewer (React 19, TypeScript, react-three-fiber) where WebSocket state synchronization drives per-client camera framing across four urban models.
+
+% ==================== PROJECTS ====================
+\section*{Projects}
+\textbf{KiezHub Neighborhood Portal} -- \href{https://kiezhub.example.org}{kiezhub.example.org}
+\begin{itemize}
+    \item Open-source neighborhood booking portal (equipment sharing, rooms, workshops): React 18, TypeScript, Vite, Node.js, Express, and MongoDB Atlas, with JWT moderation and OTP email verification.
+    \item Self-hosted on a Linux VM behind nginx and PM2 with 40+ zero-downtime deployments in English and German.
+\end{itemize}
+
+% ==================== CERTIFICATIONS & AWARDS ====================
+\section*{Certifications \& Awards}
+Microsoft Certified: Azure Fundamentals (AZ-900) \textbar{} Engineering Excellence Spotlight, CoreTel Systems 2023
+
+\end{document}
