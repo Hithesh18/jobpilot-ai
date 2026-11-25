@@ -1,0 +1,114 @@
+{
+  "schema_version": "2.0",
+  "phase": "BACKLOG_14D_PLUS_24H_FIRST",
+  "backlog_window_start": "2026-11-11",
+  "backlog_14d_all_complete": false,
+  "realtime_interval_minutes": 30,
+  "last_active_agent": "None (Fresh Workspace)",
+  "last_heartbeat_at": "2026-11-25T22:19:09+01:00",
+  "last_realtime_sweep_at": null,
+  "next_app_id_hint": "APP-001",
+  "ready_to_submit_immediately": [],
+  "claims": {},
+  "pending_tracker_logs": [],
+  "portal_last_sweep": {},
+  "portals": {
+    "ats_multi_platform_apis": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "google_ats_dorks": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "join_com": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "stepstone_de": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "linkedin_de": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "indeed_de": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "xing_jobs": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "wearedevelopers": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "englishjobs_de": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "arbeitsagentur_ba": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "make_it_in_germany": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "get_in_it": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "jobvector": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "yourfirm_jobware_stellenanzeigen_jobmesh": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    },
+    "monster_joblift_talent_jobsde_glassdoor": {
+      "last_24h_sweep_at": null,
+      "backlog_14d_completed": false,
+      "verified_14d_screened_count": 0,
+      "backlog_14d_cursor": "page=1"
+    }
+  },
+  "session_log": [
+    {
+      "at": "2026-11-25T22:19:09+01:00",
+      "agent": "init_workspace.py",
+      "note": "Initialized clean synchronized dual-agent workspace."
+    }
+  ]
+}
