@@ -1,11 +1,11 @@
 # JobPilot AI
 
-**24/7 Dual-Agent Autonomous Job Discovery, Truthful LaTeX Resume & Humanized Cover Letter Tailoring, Silent Background Browser Application, Inbox Status Sync & Self-Tuning Engine — Synchronized Across Claude Code & Gemini (Antigravity).**
+**24/7 Multi-Agent Autonomous Job Discovery, Truthful LaTeX Resume & Humanized Cover Letter Tailoring, Silent Background Browser Application, Inbox Status Sync & Self-Tuning Engine — Works With Claude Code, Gemini, OpenAI Codex, Cursor, Windsurf, Copilot, or Any Agentic LLM.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg)](requirements.txt)
 [![Node.js 18+](https://img.shields.io/badge/Node.js-18%2B-339933.svg)](package.json)
-[![Agents](https://img.shields.io/badge/Shared%20Brain-Claude%20Code%20%E2%86%94%20Gemini%20Antigravity-7C3AED.svg)](AGENTS.md)
+[![Agents](https://img.shields.io/badge/Any%20LLM-Claude%20%7C%20Gemini%20%7C%20Codex%20%7C%20Cursor-7C3AED.svg)](AGENTS.md)
 
 ---
 
@@ -21,7 +21,7 @@ Once everything was dialed in, within **6 days** and around **45 applications**,
 
 Manual job hunting forces a bad tradeoff: either send generic resumes at volume and get filtered out, or spend 45 minutes per application tailoring documents, re-typing identical form fields, and tracking statuses in spreadsheets. Meanwhile, running a single AI coding agent hits session or token quotas mid-sweep and loses context.
 
-**JobPilot AI** turns **Claude Code** and **Gemini (Antigravity)** into a **synchronized, dual-agent autonomous pipeline** sharing one persistent on-disk brain:
+**JobPilot AI** turns **any agentic coding LLM or IDE** (**Claude Code**, **Gemini / Antigravity**, **OpenAI Codex**, **Cursor**, **Windsurf**, **GitHub Copilot**, **Cline / Roo Code**, **Aider**, etc.) into a **synchronized, multi-agent autonomous pipeline** sharing one persistent on-disk brain (`AGENTS.md` + `CLAUDE.md` + `.cursorrules` + `sweep_state.json`). You simply clone the repo, open it in whichever AI agent(s) you use, and paste the onboarding prompt:
 
 - **Multi-Portal & Direct-ATS Discovery (Never Single-Portal):** Harvests fresh `< 24h` postings first, then sweeps `14-day` backlogs and runs perpetual `30-minute` incremental checks across **21+ job boards, public guest APIs, RSS/JSON feeds, and direct company ATS boards** (`Ashby`, `Greenhouse`, `Lever`, `Personio`, `Workable`, `Recruitee`, `SmartRecruiters`, `Teamtailor`, `JOIN`, `StepStone`, `Indeed`, `LinkedIn Guest API`, `XING`, `Arbeitsagentur`, `WeAreDevelopers`, `EnglishJobs`, `BerlinStartupJobs`, `GermanTechJobs`, `Wellfound`, and more).
 - **Zero-Forgery, Per-Employer Truthful Tailoring:** Compiles a crisp, single-column **1-page LaTeX Resume** and a **100% humanized plain-paragraph Cover Letter** via [Tectonic](https://tectonic-typesetting.github.io/). Every bullet stays anchored to verified work per employer — zero fabricated skills, zero buzzword grafting, and zero cross-company stack contamination.
@@ -37,12 +37,14 @@ Manual job hunting forces a bad tradeoff: either send generic resumes at volume 
 
 ```mermaid
 flowchart TD
-    Profile["candidate_profile.json + CURRENT_COMPANY_TECH_STACK.md"] --> Brain["Shared Agent Brain (AGENTS.md + CLAUDE.md + sweep_state.json)"]
+    Profile["candidate_profile.json + CURRENT_COMPANY_TECH_STACK.md"] --> Brain["Shared Agent Brain (AGENTS.md + CLAUDE.md + .cursorrules + sweep_state.json)"]
     Brain <--> Claude["Claude Code (VS Code / CLI + 24/7 Watchdog)"]
-    Brain <--> Gemini["Gemini (Antigravity + Scheduled Cron)"]
+    Brain <--> Gemini["Gemini (Antigravity / Gemini CLI)"]
+    Brain <--> OtherLLMs["OpenAI Codex / Cursor / Windsurf / Copilot / Any LLM"]
 
     Claude --> Discovery["Multi-Portal & Direct-ATS Discovery"]
     Gemini --> Discovery
+    OtherLLMs --> Discovery
 
     Discovery --> GuestAPIs["No-Login Guest & Official APIs (LinkedIn Guest, BA, Ashby, Greenhouse, Lever, Personio, Workable, RSS)"]
     Discovery --> PublicSweep["Parallel Guest HTML Sweep (public_portals.py)"]
@@ -74,7 +76,7 @@ flowchart TD
 - **Python 3.10+**
 - **Node.js 18+** & `npm`
 - **Google Chrome** (for the silent background CDP bridge and/or headless Playwright)
-- **Claude Code** (VS Code extension or CLI) and/or **Gemini (Antigravity)**
+- **Any Agentic Coding LLM or IDE:** **Claude Code**, **Gemini (Antigravity / Gemini CLI)**, **OpenAI Codex**, **Cursor**, **Windsurf**, **GitHub Copilot**, **Cline / Roo Code**, **Aider**, or any LLM agent with terminal & file access
 
 ### Install & Bootstrap Workspace
 
@@ -225,16 +227,21 @@ Read [`_agent_handoff/REJECTION_POSTMORTEM_AND_CONVERSION_RULES.md`](_agent_hand
 
 ---
 
-### Step 7: Switching Seamlessly Between Claude Code & Gemini (Antigravity)
+### Step 7: Extending & Switching Across Any LLM (Claude, Gemini, Codex, Cursor & More)
 
-Both agents coordinate through `_agent_handoff/sweep_state.json`, `Application_Tracker.xlsx`, and `Manual_Apply_Queue.xlsx`:
+Because all memory, portal cursors, and application logs live on disk (`AGENTS.md`, `candidate_profile.json`, `_agent_handoff/sweep_state.json`, `Application_Tracker.xlsx`, and `Manual_Apply_Queue.xlsx`), **JobPilot AI is completely LLM-agnostic**:
 
-- **Interactive Trigger (Either Agent):** Open this workspace in **Claude Code** or **Gemini (Antigravity)** and type:
+- **Zero Vendor Lock-In (Clone & Instruct Any Agent):**
+  - `AGENTS.md` is automatically loaded by **OpenAI Codex**, **Gemini (Antigravity / CLI)**, **Windsurf**, **GitHub Copilot**, and **Cline / Roo Code**.
+  - `CLAUDE.md` automatically loads the protocol in **Claude Code**.
+  - `.cursorrules` automatically loads the protocol in **Cursor**.
+  - For any other AI coding tool or custom LLM agent, just clone the repo, tell it *"Read `AGENTS.md` and run"*, and it immediately joins the same pipeline.
+- **Interactive Trigger (Any Agent):** Open this workspace in **Claude Code**, **Gemini**, **Codex**, **Cursor**, or your preferred AI coding IDE and type:
   ```text
   run
   ```
   The active agent runs `sync_status.py`, drains any ready packages in `sweep_state.json`, sweeps `< 24h` postings first, advances unfinished `14-day` portal cursors (`state_upd.py --screened >= 15`), and transitions to `30-minute` real-time sweeps.
-- **If One Agent Hits Token/Quota Limits:** Simply open the other agent (`Claude Code` <-> `Gemini Antigravity`) in the same folder and type `run` (or paste `_agent_handoff/CONTINUATION_PROMPT.md`). It picks up from the exact `APP-XXX` ID and portal page cursor saved in `sweep_state.json` with zero duplicate applications.
+- **Rotate Across Multiple LLMs Whenever Quotas Expire:** If one model hits token or session limits, simply open any other agent (`Claude Code` <-> `Gemini` <-> `Codex` <-> `Cursor`) in this exact folder and type `run` (or paste `_agent_handoff/CONTINUATION_PROMPT.md`). It resumes from the exact `APP-XXX` ID and portal page cursor saved in `sweep_state.json` with zero duplicate applications.
 - **24/7 Unattended Watchdog (Windows PowerShell + Claude Code CLI):**
   ```powershell
   # Verify CLI + state in dry-run mode:
@@ -253,12 +260,12 @@ Both agents coordinate through `_agent_handoff/sweep_state.json`, `Application_T
 
 ---
 
-## Copy-Paste First-Time Setup & Launch Prompt (Works for Any Role, Industry, or Country)
+## Copy-Paste First-Time Setup & Launch Prompt (Works With Any LLM, Role, Industry, or Country)
 
-Right after cloning `jobpilot-ai`, copy the prompt below, paste it into **Claude Code** or **Gemini (Antigravity)** inside this repository, and attach or paste your current CV/resume:
+Right after cloning `jobpilot-ai`, open the folder in **any AI coding agent** (**Claude Code**, **Gemini / Antigravity**, **OpenAI Codex**, **Cursor**, **Windsurf**, **GitHub Copilot**, **Cline**, etc.), paste the prompt below, and attach or paste your current CV/resume:
 
 ```markdown
-You are onboarding me into **JobPilot AI** (`AGENTS.md` + `CLAUDE.md`) in this repository so both Claude Code and Gemini (Antigravity) can discover, tailor, QA-verify, and submit job applications for me silently in the background.
+You are onboarding me into **JobPilot AI** (`AGENTS.md`) in this repository so any AI coding agent I use (Claude Code, Gemini, OpenAI Codex, Cursor, Windsurf, Copilot, etc.) can discover, tailor, QA-verify, and submit job applications for me silently in the background using the shared on-disk state.
 
 Please guide me through first-time setup and verification step by step before starting applications:
 

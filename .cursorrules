@@ -1,0 +1,4 @@
+# Cursor / IDE Agent Instructions for JobPilot AI
+# Read and follow the full shared protocol in `AGENTS.md` (and `candidate_profile.json`) at the start of every session.
+
+Always read `AGENTS.md`, `AGENT_PLAYBOOK_MEMORY.md`, `candidate_profile.json`, and `_agent_handoff/sweep_state.json` first, and follow every rule in `AGENTS.md` without exception.
