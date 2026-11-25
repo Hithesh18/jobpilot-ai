@@ -1,0 +1,177 @@
+{
+  "candidate": {
+    "first_name": "Alex",
+    "last_name": "Morgan",
+    "full_name": "Alex Morgan",
+    "salutation_en": "Mr.",
+    "salutation_de": "Herr",
+    "gender": "Male",
+    "date_of_birth_iso": "2000-06-15",
+    "date_of_birth_de": "15.06.2000",
+    "date_of_birth_us": "06/15/2000",
+    "nationality": "Canadian",
+    "email": "alex.morgan.dev@example.com",
+    "phone": "+49 170 0000000",
+    "address": {
+      "street": "Torstrasse",
+      "street_number": "120",
+      "additional": "Apt 4B",
+      "postal_code": "10119",
+      "city": "Berlin",
+      "region": "Berlin",
+      "country": "Germany",
+      "country_de": "Deutschland",
+      "display_location": "Berlin, Germany"
+    },
+    "links": {
+      "linkedin_url": "https://linkedin.com/in/alex-morgan-example",
+      "linkedin_display": "linkedin.com/in/alex-morgan-example",
+      "github_url": "https://github.com/alex-morgan-example",
+      "github_display": "github.com/alex-morgan-example",
+      "portfolio_url": "https://alex-morgan-dev.example.com",
+      "portfolio_display": "alex-morgan-dev.example.com",
+      "flagship_project_url": "https://kiezhub.example.org",
+      "flagship_project_display": "kiezhub.example.org"
+    },
+    "education": {
+      "current_degree": "M.Sc. in Computer Science",
+      "current_university": "Technical University of Berlin",
+      "graduation_month_year": "November 2026"
+    },
+    "availability": {
+      "earliest_start_iso": "2026-12-01",
+      "earliest_start_de": "01.12.2026",
+      "earliest_start_us": "12/01/2026",
+      "earliest_start_prose": "1 December 2026",
+      "notice_period_number": "2",
+      "notice_period_unit_en": "Weeks",
+      "notice_period_unit_de": "Wochen"
+    },
+    "work_authorization": {
+      "authorized_in_target_country": true,
+      "requires_visa_sponsorship": false,
+      "permit_type": "Time-limited work permit / Befristete Arbeitserlaubnis (eligible for full-time EU Blue Card transition)",
+      "open_to_relocation": true
+    },
+    "compensation": {
+      "currency": "EUR",
+      "default_range": "EUR 60,000 - 70,000",
+      "default_number": "65000",
+      "junior_mid_number": "60000",
+      "mid_regular_number": "65000",
+      "include_in_cover_letter_by_default": false
+    },
+    "spoken_languages": {
+      "resume_spoken_line": "English (fluent), German (A2, actively improving)",
+      "english_level": "C1 / Fluent",
+      "german_level": "A2 / Elementary",
+      "max_allowed_german_requirement": "A2"
+    },
+    "files": {
+      "resume_pdf_name": "Alex_Morgan_Resume.pdf",
+      "cover_letter_pdf_name": "Alex_Morgan_Cover_Letter.pdf",
+      "transcript_pdf_relpath": "_agent_handoff/Transcript.pdf"
+    }
+  },
+  "targeting": {
+    "profession": "Software Engineering",
+    "target_country": "Germany",
+    "primary_city": "Berlin",
+    "target_locations": [
+      ["Germany", "101282230"],
+      ["Berlin, Germany", ""],
+      ["Munich, Bavaria, Germany", ""],
+      ["Hamburg, Germany", ""],
+      ["Frankfurt, Hesse, Germany", ""],
+      ["Cologne, North Rhine-Westphalia, Germany", ""]
+    ],
+    "yoe_min": 0,
+    "yoe_max": 4,
+    "hard_block_yoe_min": 5,
+    "min_honest_fit_score": 82,
+    "target_roles": [
+      "Junior Full Stack Developer",
+      "Full Stack Developer",
+      "Full Stack Engineer",
+      "Junior Frontend Developer",
+      "Frontend Engineer",
+      "Backend Engineer (Node.js / TypeScript)",
+      "React / Next.js Developer",
+      "Vue.js Developer",
+      "TypeScript Developer",
+      "Junior AI / Applied LLM Engineer",
+      "3D Web / Three.js / WebGL Engineer"
+    ],
+    "permanent_do_not_apply": [
+      "northstar cloud",
+      "pulseevent",
+      "pulseevent technologies",
+      "coretel",
+      "coretel systems"
+    ]
+  },
+  "employers": {
+    "current": {
+      "name": "Northstar Cloud GmbH",
+      "header_tex": "Northstar Cloud GmbH, Berlin",
+      "city": "Berlin",
+      "dates": "September 2025 -- Present",
+      "title": "Full Stack Developer (Working Student)",
+      "domain": "Multi-tenant Cloud Operations & Metering SaaS",
+      "ai_feature_name": "AtlasCopilot",
+      "verified_stack": [
+        "TypeScript", "Node.js", "Express.js", "Vue.js 3", "Pinia", "Nuxt 3",
+        "Tailwind CSS", "Vite", "OpenAPI", "Zod", "PostgreSQL", "MSSQL",
+        "MongoDB", "Redis", "Redis Streams", "GCP Pub/Sub", "JWT", "OAuth 2.0",
+        "RBAC", "Docker", "Kubernetes (GKE)", "Helm", "GitLab CI", "GitOps (Flux)",
+        "Vitest", "Supertest", "Playwright", "LangChain", "LangGraph", "RAG", "MCP", "Gemini"
+      ]
+    },
+    "previous_1": {
+      "name": "PulseEvent Technologies",
+      "header_tex": "PulseEvent Technologies, Berlin",
+      "city": "Berlin",
+      "dates": "October 2024 -- August 2025",
+      "title": "Full Stack Developer (Working Student)",
+      "domain": "Live Event Ticketing & Registration SaaS",
+      "verified_stack": [
+        "React", "TypeScript", "NestJS", "REST APIs", "BullMQ", "MongoDB",
+        "Docker", "Playwright", "Jest", "React Testing Library"
+      ]
+    },
+    "previous_2": {
+      "name": "CoreTel Systems",
+      "header_tex": "CoreTel Systems, Toronto",
+      "city": "Toronto",
+      "dates": "May 2022 -- August 2024",
+      "title": "Software Developer",
+      "domain": "Enterprise Subscription & Interconnect Billing Portal",
+      "verified_stack": [
+        "React", "Angular", "JavaScript", "SQL"
+      ]
+    }
+  },
+  "experience_anchors": {
+    "s1": "Build and release SaaS features end to end with TypeScript, Node.js, Express.js, Vue.js 3, PostgreSQL, and MongoDB.",
+    "s4": "Closed a tenant-isolation gap in subscription APIs by enforcing strict JWT/OAuth 2.0 and RBAC checks, backed by regression tests.",
+    "m1": "Built event-registration and ticketing features end to end with React, TypeScript, NestJS REST APIs, BullMQ background jobs, and MongoDB data models.",
+    "t1": "Developed customer-facing enterprise billing and reporting interfaces using React, Angular, JavaScript, and SQL.",
+    "t2": "Owned the Account Reconciliation module end to end and built reusable React and backend components that improved response times.",
+    "th": "an interactive 3D scene viewer (React 19, TypeScript, react-three-fiber) where WebSocket state synchronization drives per-client camera framing across four urban models.",
+    "p1": "Open-source neighborhood booking portal (equipment sharing, rooms, workshops): React 18, TypeScript, Vite, Node.js, Express, and MongoDB Atlas, with JWT moderation and OTP email verification."
+  },
+  "forbidden_resume_terms": [
+    "spring boot",
+    "c#",
+    "asp.net",
+    "dotnet",
+    "golang",
+    "rust",
+    "apache kafka",
+    "ruby on rails",
+    "symfony",
+    "laravel",
+    "blazor",
+    "alexalex"
+  ]
+}

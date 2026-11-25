@@ -1,0 +1,17 @@
+# =============================================================================
+# Private Portal Account Logins (Gitignored — Local Machine Only)
+# =============================================================================
+# Copy or let `python _agent_handoff/init_workspace.py` copy this file to
+# `_private_account_logins.txt`.
+#
+# Rules enforced by AGENTS.md:
+#   1. Prefer "Sign in with Google" on portals whenever available.
+#   2. When a company ATS (e.g., Workday, SmartRecruiters, SuccessFactors)
+#      requires creating a brand-new account, the agent generates a strong
+#      unique password and appends the entry below immediately.
+#   3. Agents NEVER reset passwords on pre-existing accounts (those are routed
+#      to `Manual_Apply_Queue.xlsx` for quick human review).
+# =============================================================================
+
+# [YYYY-MM-DD] Portal / Company | URL | Email | Generated Password | Notes
+# [2026-12-01] Example Corp Workday | https://example.wd3.myworkdayjobs.com | alex.morgan.dev@example.com | <generated-strong-password> | New candidate account

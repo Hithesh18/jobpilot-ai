@@ -1,0 +1,51 @@
+# =============================================================================
+# Secrets, Credentials & Personal Documents (NEVER COMMIT)
+# =============================================================================
+_private_account_logins.txt
+.env
+.env.*
+_agent_handoff/Transcript.pdf
+_agent_handoff/headless_profile/
+
+# =============================================================================
+# Auto-Downloaded Tooling & Runtime Caches
+# =============================================================================
+_agent_handoff/bin/
+_agent_handoff/_*
+_agent_handoff/latest_multi_portal_harvest.json
+_agent_handoff/harvest_*.json
+_agent_handoff/last_gmail_rows.json
+_agent_handoff/last_gmail_sync_report.json
+_agent_handoff/STOP_24X7
+_agent_handoff/cdp_scripts/_*.json
+!_agent_handoff/cdp_scripts/_sp_cfg.json
+!_agent_handoff/cdp_scripts/_g_cfg.json
+!_agent_handoff/cdp_scripts/_b_cfg.json
+_agent_handoff/cdp_scripts/_*.txt
+
+# =============================================================================
+# Logs, Bytecode & Node Dependencies
+# =============================================================================
+*.log
+*.err
+*.stamp
+*.tmp
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+
+# =============================================================================
+# Per-Application Job Packages Generated at Runtime (<Company>_<Role>/)
+# Keep repository root clean; all generated job folders contain Job_Description.txt
+# =============================================================================
+/*_*/
+!/_agent_handoff/
+
+# =============================================================================
+# OS & Editor Metadata
+# =============================================================================
+.DS_Store
+Thumbs.db
+~$*.xlsx

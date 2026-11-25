@@ -1,0 +1,16 @@
+{
+  "name": "jobpilot-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Synchronized Claude Code + Gemini Antigravity autonomous job discovery, truthfulness-verified resume tailoring, and silent background application engine.",
+  "license": "MIT",
+  "scripts": {
+    "bridge": "node _agent_handoff/cdp_bridge.js",
+    "init": "python _agent_handoff/init_workspace.py",
+    "status": "python _agent_handoff/sync_status.py",
+    "test": "python _agent_handoff/test_german_requirement.py"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}
