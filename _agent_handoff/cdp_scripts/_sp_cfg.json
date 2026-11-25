@@ -1,0 +1,19 @@
+{
+  "date": "d",
+  "pages": [1, 2],
+  "includeYahoo": true,
+  "queries": [
+    "site:join.com/companies (\"Full Stack\" OR \"Frontend\" OR \"AI Engineer\" OR \"TypeScript\" OR \"Junior\") (Berlin OR Munich OR Hamburg OR Frankfurt OR Germany)",
+    "site:jobs.personio.de (\"Full Stack\" OR \"Frontend\" OR \"AI Engineer\" OR \"TypeScript\" OR \"React\" OR \"Vue\" OR \"Junior\")",
+    "site:jobs.personio.com (\"Full Stack\" OR \"Frontend\" OR \"AI Engineer\" OR \"TypeScript\" OR \"Junior\") (Berlin OR Munich OR Hamburg OR Germany)",
+    "site:jobs.ashbyhq.com (\"Full Stack\" OR \"Frontend\" OR \"Software Engineer\" OR \"AI Engineer\" OR \"Product Engineer\") (Berlin OR Munich OR Germany)",
+    "site:job-boards.eu.greenhouse.io (\"Full Stack\" OR \"Frontend\" OR \"Software Engineer\" OR \"AI Engineer\") (Berlin OR Munich OR Germany)",
+    "site:job-boards.greenhouse.io (\"Full Stack\" OR \"Frontend\" OR \"Software Engineer\" OR \"AI Engineer\") (Berlin OR Munich OR Germany)",
+    "site:jobs.eu.lever.co (\"Full Stack\" OR \"Frontend\" OR \"Software Engineer\" OR \"AI Engineer\") (Berlin OR Munich OR Germany)",
+    "site:jobs.lever.co (\"Full Stack\" OR \"Frontend\" OR \"Software Engineer\" OR \"AI Engineer\") (Berlin OR Munich OR Germany)",
+    "site:apply.workable.com (\"Full Stack\" OR \"Frontend\" OR \"TypeScript\" OR \"React\" OR \"AI Engineer\") (Berlin OR Munich OR Germany)",
+    "site:recruitee.com (\"Full Stack\" OR \"Frontend\" OR \"TypeScript\" OR \"React\" OR \"AI Engineer\") (Berlin OR Munich OR Hamburg OR Germany)",
+    "site:jobs.smartrecruiters.com (\"Full Stack\" OR \"Frontend\" OR \"TypeScript\" OR \"React\" OR \"AI Engineer\") (Berlin OR Munich OR Hamburg OR Germany)",
+    "site:teamtailor.com (\"Full Stack\" OR \"Frontend\" OR \"TypeScript\" OR \"React\" OR \"AI Engineer\") (Berlin OR Munich OR Hamburg OR Germany)"
+  ]
+}

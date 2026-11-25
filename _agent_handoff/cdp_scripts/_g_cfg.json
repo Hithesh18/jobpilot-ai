@@ -1,0 +1,15 @@
+{
+  "tbs": "qdr:d3",
+  "starts": [0],
+  "queries": [
+    "site:jobs.eu.greenhouse.io (\"Full Stack\" OR Frontend OR \"Product Engineer\" OR \"Software Engineer\" OR \"AI Engineer\") (Berlin OR Munich OR Hamburg OR Germany) -Senior -Staff",
+    "site:career.personio.de (\"Fullstack\" OR \"Full Stack\" OR Frontend OR \"Software Engineer\" OR \"AI Engineer\") (TypeScript OR React OR Vue OR \"Node.js\") -Senior -Staff",
+    "site:jobs.ashbyhq.com (\"Full Stack\" OR Frontend OR \"Product Engineer\" OR \"AI Engineer\" OR \"Software Engineer\") (Berlin OR Munich OR Hamburg OR Germany) -Senior -Staff",
+    "site:jobs.personio.de (\"Fullstack\" OR \"Full Stack\" OR Frontend OR \"Software Engineer\" OR \"AI Engineer\") (TypeScript OR React OR Vue OR \"Node.js\") -Senior -Staff",
+    "site:teamtailor.com (\"Full Stack\" OR Frontend OR \"Product Engineer\" OR \"Software Engineer\" OR \"AI Engineer\") (Berlin OR Munich OR Hamburg OR Germany) -Senior -Staff",
+    "site:apply.workable.com (\"Full Stack\" OR Frontend OR \"Software Engineer\" OR \"AI Engineer\") (Berlin OR Munich OR Hamburg OR Germany) -Senior -Staff",
+    "site:recruitee.com (\"Full Stack\" OR Frontend OR \"Software Engineer\" OR TypeScript OR React OR Vue) (Berlin OR Munich OR Hamburg) -Senior -Staff",
+    "site:jobs.smartrecruiters.com (\"Full Stack\" OR Frontend OR Backend OR \"Software Engineer\" OR \"AI Engineer\") (Berlin OR Munich OR Hamburg OR Germany) -Senior -Staff",
+    "site:join.com/companies (\"Full Stack\" OR Frontend OR \"Product Engineer\" OR \"AI Engineer\" OR React OR Vue OR TypeScript) (Berlin OR Munich OR Hamburg OR Germany) -Senior -Staff"
+  ]
+}

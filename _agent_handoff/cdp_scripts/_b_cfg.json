@@ -1,0 +1,18 @@
+{
+  "filters": "ex1:\"ez2\"",
+  "firsts": [1, 11],
+  "queries": [
+    "site:job-boards.greenhouse.io typescript Germany",
+    "site:job-boards.greenhouse.io \"node.js\" Berlin",
+    "site:job-boards.greenhouse.io \"AI engineer\" Germany",
+    "site:jobs.lever.co \"AI engineer\" Germany",
+    "site:jobs.lever.co \"product engineer\" Berlin",
+    "site:apply.workable.com \"AI engineer\" Germany",
+    "site:jobs.personio.de \"AI engineer\"",
+    "site:jobs.personio.de \"full stack\" English",
+    "site:recruitee.com typescript Germany",
+    "site:teamtailor.com typescript Berlin",
+    "site:jobs.ashbyhq.com \"full stack\" Germany",
+    "site:jobs.ashbyhq.com \"AI engineer\" Munich"
+  ]
+}
