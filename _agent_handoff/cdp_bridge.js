@@ -67,6 +67,23 @@ async function ensureConnected() {
   console.log('Connecting persistent bridge to:', endpoint);
   browser = await chromium.connectOverCDP(endpoint, { timeout: 0 });
   context = browser.contexts()[0];
+  // Restore Chrome's native download behavior and dark color-scheme preference
+  // (Playwright's connectOverCDP otherwise overrides downloads and forces prefers-color-scheme: light).
+  try {
+    const bcdp = await browser.newBrowserCDPSession();
+    await bcdp.send('Browser.setDownloadBehavior', { behavior: 'default' });
+  } catch (e) {}
+  const preserveDarkTheme = async (page) => {
+    try {
+      const pcdp = await context.newCDPSession(page);
+      await pcdp.send('Emulation.setEmulatedMedia', {
+        media: '',
+        features: [{ name: 'prefers-color-scheme', value: 'dark' }]
+      });
+    } catch (e) {}
+  };
+  for (const p of context.pages()) await preserveDarkTheme(p);
+  context.on('page', preserveDarkTheme);
   global.__tabs = {};
   console.log('BRIDGE_CONNECTED_OK! Open pages:', context.pages().length);
   return { browser, context };
